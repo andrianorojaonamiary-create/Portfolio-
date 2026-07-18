@@ -163,24 +163,48 @@ setInterval(() => {
 
 // Envoi du formulaire avec EmailJS
 const contactForm = document.getElementById('contactForm');
+const sendBtn = document.getElementById('sendBtn');
 
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
+        // Récupération des valeurs
+        const nom = document.getElementById('nom').value;
+        const email = document.getElementById('email').value;
+        const telephone = document.getElementById('telephone').value;
+        const message = document.getElementById('message').value;
+        
+        // Vérification simple
+        if (!nom || !email || !message) {
+            alert('Veuillez remplir tous les champs obligatoires.');
+            return;
+        }
+        
+        // Désactiver le bouton pendant l'envoi
+        sendBtn.disabled = true;
+        sendBtn.textContent = 'Envoi en cours...';
+        
+        // Paramètres du template EmailJS
         const templateParams = {
-            nom: document.getElementById('nom').value,
-            email: document.getElementById('email').value,
-            telephone: document.getElementById('telephone').value,
-            message: document.getElementById('message').value
+            from_name: nom,
+            from_email: email,
+            from_phone: telephone || 'Non renseigné',
+            message: message
         };
         
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        emailjs.send('service_6pbt2te', 'template_6vmnsa5', templateParams)
             .then(function(response) {
-                alert('Message envoyé avec succès ! Je vous répondrai rapidement.');
+                console.log('SUCCESS!', response.status, response.text);
+                alert(' Message envoyé avec succès ! Je vous répondrai rapidement.');
                 contactForm.reset();
+                sendBtn.disabled = false;
+                sendBtn.textContent = 'Envoyer';
             }, function(error) {
-                alert('Erreur lors de l\'envoi. Veuillez réessayer.');
+                console.log('FAILED...', error);
+                alert(' Erreur lors de l\'envoi. Veuillez réessayer ou me contacter directement par email.');
+                sendBtn.disabled = false;
+                sendBtn.textContent = 'Envoyer';
             });
     });
 }
