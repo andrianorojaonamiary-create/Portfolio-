@@ -1,0 +1,57 @@
+<!-- ============ SECTION SERVICES ============ -->
+<section class="services">
+    <h2 class="heading">Mes <span>Services</span></h2>
+    <div class="service-container">
+        
+        <!-- 1. Développement Web -->
+        <div class="services-box">
+            <div class="icon">
+                <img src="152759.png" alt="" width="40px">
+                <a href="#"><img src="Images/Fleches.png" alt="" width="30px"></a>
+            </div>
+            <h3>Développement Web</h3>
+            <p>Création de sites web modernes avec <strong>HTML5, CSS3, Tailwind CSS</strong> et <strong>JavaScript</strong>. Sites responsives et optimisés pour tous les appareils.</p>
+        </div>
+
+        <!-- 2. Applications Web -->
+        <div class="services-box">
+            <div class="icon">
+                <img src="152759.png" alt="" width="40px">
+                <a href="#"><img src="Images/Fleches.png" alt="" width="30px"></a>
+            </div>
+            <h3>Applications Web</h3>
+            <p>Développement d'applications web complètes avec <strong>React.js, Node.js, Express.js</strong> et bases de données <strong>MySQL</strong>.</p>
+        </div>
+
+        <!-- 3. API & Backend -->
+        <div class="services-box">
+            <div class="icon">
+                <img src="152759.png" alt="" width="40px"> 
+                <a href="#"><img src="Images/Fleches.png" alt="" width="30px"></a>
+            </div>
+            <h3>API &amp; Backend</h3>
+            <p>Conception d'<strong>API RESTful</strong> avec <strong>Express.js</strong> et <strong>Node.js</strong>. Authentification sécurisée et gestion des bases de données <strong>MySQL</strong>.</p>
+        </div>
+
+        <!-- 4. Déploiement & Versionnement -->
+        <div class="services-box">
+            <div class="icon">
+                <img src="152759.png" alt="" width="40px"> 
+                <a href="#"><img src="Images/Fleches.png" alt="" width="30px"></a>
+            </div>
+            <h3>Déploiement &amp; Versionnement</h3>
+            <p>Intégration et déploiement de sites web sur différents hébergeurs. Gestion de versions avec <strong>Git</strong> et <strong>GitHub</strong>.</p>
+        </div>
+
+        <!-- 5. Projets sur mesure -->
+        <div class="services-box">
+            <div class="icon">
+                <img src="152759.png" alt="" width="40px"> 
+                <a href="#"><img src="Images/Fleches.png" alt="" width="30px"></a>
+            </div>
+            <h3>Projets sur mesure</h3>
+            <p>Réalisation de projets personnalisés selon vos besoins : sites vitrines, applications de gestion, portfolios, etc.</p>
+        </div>
+
+    </div>
+</section>
