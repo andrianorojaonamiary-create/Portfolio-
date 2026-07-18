@@ -15,38 +15,6 @@ body {
   padding: 30px 15px;
 }
 
-/* ---------- BOUTON RETOUR ---------- */
-.div-back {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1000;
-}
-
-.btn-back {
-  display: inline-block;
-  padding: 10px 22px;
-  background:#1f2630;
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
-  box-shadow: 0 4px 15px rgba(155, 155, 155, 0.3);
-  transition: 0.3s;
-  border: 2px solid transparent;
-}
-
-.btn-back:hover {
-  background: rgb(148, 163, 184);
-  transform: scale(1.05);
-  box-shadow: 0 6px 25px rgba(155, 155, 155, 0.5);
-}
-
-.btn-back i {
-  margin-right: 8px;
-}
-
 /* ---------- MAIN CONTAINER ---------- */
 .main {
   max-width: 900px;
